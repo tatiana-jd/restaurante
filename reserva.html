@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sabores del Campo - Inicio</title>
+    <title>Reserva</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,7 +13,7 @@
 
   <!--MAPA DE NAVEGACIÓN -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
   <div class="container">
     <a class="navbar-brand text-dark" href="#">Sabores del Campo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +22,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active text-dark" aria-current="page" href="index.html">Inicio</a>
+          <a class="nav-link text-dark" aria-current="page" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="menu.html">Menú</a>
+          <a class="nav-link text-dark " href="menu.html">Menú</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link text-dark" href="reserva.html">Reservas</a>
+          <a class="nav-link  active text-dark" href="reserva.html">Reservas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="contacto.html">Contacto</a>
@@ -40,14 +40,57 @@
 
   <!--Contenido-->
 
-  <div class="container text-center mt-5">
-    <h1>Bienvenidos a Sabores del Campo</h1>
-    <p class="lead">Disfruta de la mejor comida casera, preparada con amor y tradición</p>
-    <img class="img-fluid rounded" src="imagenes/restaurante.jpg" alt="sabores del campo" title="sabores del campo"> 
-  </div>
+  <form action="">
+
+    <div class="container mt-4 border rounded w-50 shadow-lg p-3 ">
+
+      <H1 class="text-center">Reserva tu mesa</H1>
+      <p class="text-center">Completa el formulario y te confirmaremos tu reserva.</p>
+
+     <div class="m-3">
+       <label for="nombre" class="form-label">Nombre completo:</label>
+       <input type="text" id="nombre" class="form-control mt-3" placeholder="Ej:Juan Perez">
+      </div>
+
+      <div class="m-3">
+       <label for="correo" class="form-label">Correo electrónico:</label>
+       <input type="email" id="correo" class="form-control mt-3" placeholder="Correo@ejemplo.com">
+      </div>
+
+     <div class="m-3">
+       <label for="fecha" class="form-label">Fecha de la reserva:</label>
+       <input type="date" id="fecha" class="form-control mt-3" placeholder="dd/mm/aa">
+      </div>
+
+     <div class="m-3">
+       <label for="hora" class="form-label">Hora:</label>
+       <input type="time" id="hora" class="form-control mt-3" placeholder="---:-- -----">
+      </div>
+
+     <div class="m-3">
+       <label for="" class="form-label">Número de personas:</label>
+       <select class="form-select" aria-label="Default select example">
+         <option selected >1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6+</option>
+       </select>
+      </div>
+
+     <div class="d-grip-gap-2 m-3 ">
+       <button class="btn btn-primary form-control">Reservar ahora</button>
+      </div>
+
+    </div>
+
+  </form>
+
+  
   
 
-  <footer class="bg-info text-center  mt-5 text-dark py-4">
+  <footer class="bg-info text-center  mt-5  text-dark py-4">
     <div class="container ">
      <h5>Síguenos en redes sociales</h5>
 
