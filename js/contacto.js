@@ -28,7 +28,7 @@ function contactar(){
         }
         else{
             Swal.fire({
-               title: element + " su mensaje a sido enviado, racias por contactarnos.",
+               title: element + " su mensaje a sido enviado, gracias por contactarnos.",
                icon: "success",
                draggable: true
            });
